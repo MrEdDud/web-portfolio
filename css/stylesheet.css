@@ -1,0 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0%; 
+    padding: 0%;
+    font-size: 3.2vh;
+    overflow-x: hidden;
+    background-color: #EBE8E2;
+    color: #EBE8E2;
+}
+
+::selection {background: #403d39; color: #778da9;}
+
+hr {
+    border: none;
+    height: 0.5vh;
+    background-color: #BF3100;
+}
+
+/* STYLING FOR THE HEADER AND FOOTER */
+/* Shared styling for the header and footer */
+header, footer {
+    background-color: #F6AA1C;
+    font-weight: bold;
+}
+
+/* Styling for the header */
+header {
+    border-bottom: #BF3100 solid 0.5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Styling for the footer */
+footer {
+    border-top: 0.5vh solid #BF3100;
+    background-position: -5vw 0vh;
+    display: flex;
+    justify-content: center;
+    height: 14vh;
+}
+
+/* All the styling for the header */
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+/* Aligning the links in the header and footer */
+header ul li {float: right; margin-left: 2vh;}
+footer ul {display: flex; margin-top: 3vh;}
+
+ul li a {
+    display: inline-block;
+    color: #BF3100;
+    padding: 2vh;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li a:hover {color: #eb5e28;}
+
+.header-text {
+    display: inline-block;
+    color: #BF3100;
+    padding: 2vh 0 2vh 0;
+}
+
+section {
+    scroll-margin-top: 10vh;
+}
+
+/* STYLING FOR THE TITLE SECTION */
+#additionalText { display: none; }
+.title-container { position: relative; }
+
+/* Styling for the main title */
+.title {
+    font-size: 4.5vh;
+    background-color: #FF8811;
+    padding: 0.1vh 0 5vh 10vw;
+    border-bottom: 0.5vh solid #BF3100;
+}
+
+.sub-title { font-size: 4vh; }
+
+/* Styling for the button on the title */
+.title-button {
+    height: 7.5vh;
+    width: 7.5vh;
+    background-color: #FF8811;
+    border-radius: 50%;
+    border: 0.5vh solid #BF3100;
+    font-size: 4.5vh;
+    margin: -4.5vh 48% 0;
+    display: flex;               
+    justify-content: center;     
+    color: #BF3100;
+    align-items: center;         
+    cursor: pointer;
+}
+
+.title p { margin-right: 40%;}
+
+.about-text {
+    display: none;
+    margin-top: 7.5vh;
+    margin-bottom: 2.5vh;
+    font-size: 3vh;
+}
+
+.about-image {
+    display: none;
+    position: absolute;
+    right: 15vw;
+    top: 30vh;
+}
+
+/* STYLING FOR THE EDUCATION SECTION */
+.education-container {
+    color: #BF3100;
+    text-align: center;
+}
+
+.education-container p {
+    margin-bottom: 10vh;
+}
+
+.school-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.left {
+    text-align: right;
+    padding: 0 2vw 0 15vw;
+    border-right: 0.25vh solid #BF3100;
+}
+
+.right {
+    text-align: left;
+    padding: 0 15vw 0 2vw;
+    border-left: 0.25vh solid #BF3100;
+}
+
+.s-title {
+    font-weight: bold;
+}
+
+.s-dates {
+    font-size: 1.6vh;
+    margin-bottom: 2.5vh;
+}
+
+.s-description {
+    font-size: 2.4vh;
+    line-height: 1.5;
+}
+
+/* STYLING FOR THE SKILLS SECTION */
+.skills-container {
+    margin-top: 10vh;
+    background-color: #FF8811;
+    border-top: #BF3100 solid 0.5vh;
+    border-bottom: #BF3100 solid 0.5vh;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    margin: 5vh auto;
+    gap: 5vh;
+    width: 65.5vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    background-color: #FF8811;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar { display: none; }
+
+.carousel-btn {
+    background: none;
+    color: #BF3100;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 5vh;
+    cursor: pointer;
+    font-size: 5vh;
+    margin: 0 1vw;
+    transition: 0.2s ease;
+}
+
+.carousel-btn:hover { color: #eb5e28; }
+
+.same-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10vw 0 10vw;
+}
+
+.card {
+    scroll-snap-align: center;
+    background-color: #F6AA1C;
+    border: 0.5vh solid #BF3100;
+    border-radius: 1vh;
+    width: 20vw;
+    height: 50vh;
+    padding: 1vh 1vw;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    text-align: center;
+    color: #BF3100;
+}
+
+.card p { font-size: 2.4vh; }
+
+/* STYLING FOR THE PROJECT SECTION */
+.projects-container {
+    color: #BF3100;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2vh;
+    padding: 0 15vw 5vh 15vw;
+}
+
+.projects-lower-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 2vh;
+    padding: 5vh 15vw 15vh 15vw;
+}
+
+.projects-image {
+    display: block;
+    width: 100%;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+.projects-container .projects-image { aspect-ratio: 16 / 9; }
+.projects-lower-grid .projects-image { aspect-ratio: 4 / 3; }
+
+.image-card {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(5%);
+    position: relative;
+    text-align: left;
+    color: #000;
+    overflow: hidden;
+}
+
+.image-card:hover {
+    transform: translateY(0%);
+    cursor: pointer;
+}
+
+.title-text {
+    position: absolute;
+    font-weight: bold;
+    left: 2.5%;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.projects-container .title-text { bottom: 17.5%; }
+.projects-lower-grid .title-text { bottom: 17.5%; }
+
+.description {
+    position: absolute;
+    font-size: 2.4vh;
+    left: 2.5%;
+    bottom: 2.5%;
+    padding-right: 2vh;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.projects-lower-grid .description { font-size: 2vh; }
+.projects-container p { padding: 0 15vw 0 15vw; }
+
+/* STYLING FOR PROJECTS MODAL */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    width: 70vw;
+    height: 100vh;
+    background: #FF8811;
+    border-left: 0.5vh solid #BF3100;
+    border-right: 0.5vh solid #BF3100;
+    padding: 3vh 3vw;
+    overflow-y: auto;
+    border-radius: 1vw 0 0 1vw;
+    position: relative;
+}
+
+.modal-close {
+    position: sticky;
+    top: 2vh;
+    color: white;
+    float: right;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: none;
+}
+
+.modal-image {
+    display: block;
+    width: 100%;
+    border-radius: 0.5vw;
+    border: #BF3100 solid 0.5vh;
+    object-fit: cover;
+}
+
+body.modal-open { overflow: hidden; }
+
+/* STYLING FOR THE WORK SECTION */
+.work-container { text-align: center; }
+.work-title {
+    background-color: #FF8811;
+    padding: 0.1vh 10vw 5vh 10vw;
+    color: white;
+    border-top: 0.5vh solid #BF3100;
+}
+
+.work-section {
+    text-align: left;
+    color: #BF3100;
+}
+
+.work-section h1 {
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+
+.work-section p {
+    font-size: 2.5vh;
+}
+
+.dates { float: right; }

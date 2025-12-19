@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <ul>
+            <div class="header-text">Eduard Cojocaru</div>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </header>
+
+    <!--TITLE-->
+    <div class="title-container" id="about">
+        <div class="title">
+            <h1>Hello, I'm Eduard</h1>
+            <p class="sub-title">I’m an aspiring Software Engineer. Come and learn more about me in my portfolio!</p>
+            <p id="additionalText" class="about-text"></p>
+        </div>
+        <span class="title-button" onclick="revealText()" id="titleButton">↓</span>
+        <img id="aboutImage" class="about-image" src="/graphics/motherboard.png" alt="Motherboard Picture">
+    </div>
+    
+    <!-- EDUCATION -->
+    <section class="education-container" id="education">
+        <h1>My Education</h1>
+        <p>Here is my educational background.</p>
+        <div class="school-container">
+            <div class="left">
+                <!-- Uni description -->
+                <div class="s-title">Middlesex University</div>
+                <div class="s-dates">Sep 2024 - June 2027</div>
+                <div class="s-description">Currently persuing a BSc in Computer Science. Some notable modules are: 
+                    <br><strong>Object-oriented programming -
+                    <br>Web apps and Databases -
+                    <br>Systems and Architecture -</strong>
+                </div>
+                <!-- MPA description -->
+                <div class="s-title" style="margin-top: 20vh">Marshalls Park Academy</div>
+                <div class="s-dates">Sep 2017 - June 2022</div>
+                <div class="s-description">Here are some notable grades I achieved for my GCSE's: 
+                    <br><strong>Computer Science: A*-
+                    <br>English Language: B -
+                    <br>English Literature: B -
+                    <br>Mathematics: B -</strong>
+                </div>
+            </div>
+            <div class="right">
+                <!-- College description -->
+                <div class="s-title" style="margin-top: 25vh">Barking and Dagenham College</div>
+                <div class="s-dates">Sep 2022 - June 2024</div>
+                <div class="s-description">During my time at college, I studied a <strong>Level 3, T-Level course in Digital Production, Design and Development</strong>. At the end of my course, I achieved a <strong>Merit</strong>.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-container" id="skills">
+        <h1>My Skills</h1>
+        <p>Here are some of the <strong>technical skills</strong> I have aquired over time including both software and hardware.</p>
+        <div class="same-line">
+            <button class="carousel-btn" onclick="scrollCarousel(-1)">←</button>
+            <div class="carousel" id="skillsCarousel">
+                <div class="card">
+                    <h2>Python</h2>
+                    <p>I created games, web applications (using Flask) and other programs using Python. My most comfortable language.</p>
+                </div>
+                <div class="card">
+                    <h2>JavaScript</h2>
+                    <p>I created both front-end and back-end functionality for web apps throughout different projects. I have experience with Node.js, Express and MongoDB.</p>
+                </div>
+                <div class="card">
+                    <h2>HTML/CSS</h2>
+                    <p>I have a solid understanding of HTML/CSS and I'm able to use frameworks like Bootstrap to design professional websites.</p>
+                </div>
+                <div class="card">
+                    <h2>Java</h2>
+                    <p>I have a solid understanding of Java. I am able to use Java to manipulate data.</p>
+                </div>
+                <div class="card">
+                    <h2>Linux</h2>
+                    <p>I am able to install and manage Linux distributions such as Debian, Ubuntu and Arch Linux.</p>
+                </div>
+                <div class="card">
+                    <h2>Hardware</h2>
+                    <p>I have created robot vehicles using the Raspberry Pi 5 and other hardware which I controlled using Python.</p>
+                </div>
+            </div>
+            <button class="carousel-btn" onclick="scrollCarousel(1)">→</button>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-container" id="projects">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I have worked on like my <strong>robot tank, solitaire website, AI text rewriters and my laptop with arch linux</strong>.</p>
+        
+        <div class="projects-grid">
+            <div class="image-card" onclick="openModal(this)">
+                <img src="graphics/project1.png" class="projects-image">
+                <div class="title-text">Robot Tank</div>
+                <div class="description">A project where I built a robot tank using a Raspberry Pi 5 and Python + Flask.</div>
+
+                <div class="modal-content">
+                    <h1>Robot Tank</h1>
+                    <p>Please check out the code on my <a href="https://github.com/MrEdDud/robot-tank" style="color: white;">GitHub repository</a>.</p>
+                    <p>The way this project started was when I first got introduced to robotics which deeply fascinated me. I decided the therefore create a vehicle with a Raspberry Pi 5 which I had won in a competition at my university. It started with an idea of creating a robot tank which you can speak to and it will respond using some sort of AI.</p>
+                    <p>For now, I have only been able to make the vehicle move and output sound via youtube links.</p>
+                    <p>When I first started, I started off by jotting down some ideas on pen and paper and then later switched to software. I started using FreeCAD which was a whole new learning experience for me as I had never used CAD software before but after hours of learning, and taking hardware models from the internet I was able to make the basic shape for my tank. Next was manufacturing the baseplate. Heres what it looks like on paper.</p>
+                    <img src="graphics/tankcad1.png" class="modal-image">
+                    <p>Now to manufacture this baseplate, I used the help of my Dad because I had no clue what I was doing. We just used a piece of plywood and then used the paper to mark down where we need to cut and with the help of his tools, and a bit of paint I had the baseplate in real life.</p>
+                    <p>There are a few issues with my baseplate such as the baseplate not being wide enough for the brackets so thats why they stick out and also I made some unneccessary and ugly holes in the baseplate.</p>
+                    <hr>
+                    <p>While doing this I was also assembling the Raspberry Pi and my audio bonnet and testing it to see if audio works and creating the start to a backend using Flask and Python.</p>
+                    <img src="graphics/raspi.png" class="modal-image">
+                    <p>With the backend, I also made the frontend. Here is what my frontend looks like:</p>
+                    <img src="graphics/tank1.png" class="modal-image">
+                    <p>As you can see, the frontend is very simple and minimalistic. I have controls to move the tank, and an input box for youtube links only. Then you can play and stop the sound.</p>
+                    <p>Next came full assembly. I put the motors on the front 2 wheels, 3D printed (with the help of my friend) 2 back wheels and used some metal rods as axles and then hooked up my motors to my motor driver and the driver to the raspberry pi. After lots of debugging, I was able to get the tank to move.</p>
+                    <p>Now here we are at the modern day. My next steps are to hook up a microphone to the raspberry pi and see if I can use the OpenAI API to make it respond to me. If there are some things I would like to change, it is the baseplate as its quite rough but apart from that I am pretty happy with it.</p>
+                    <p>This is the hardware I used:<br>- Raspberry Pi 5<br>- DC 6V Motor x2<br>- Adafruit Mono I2S Speaker Bonnet<br>- Motor driver TB6612FNG</p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal(this)">
+                <img src="graphics/project2.png" class="projects-image">
+                <div class="title-text">Relax: Social media website</div>
+                <div class="description">A project where I made a social media website using Node.js with Express and MongoDB.</div>
+
+                <div class="modal-content">
+                    <h1>Relax: Social media website</h1>
+                    <!-- <p>Please check out the code on my <a href="https://github.com/MrEdDud/relax-social-media-website" style="color: white;">GitHub repository</a>.</p> -->
+                    <p>This project was a university assignment where I made a social media website using Node.js with Express and MongoDB.</p>
+                    <p>For this project I was able to create a social media website with a functioning login/registration system, a working feed page where users can view the content of users they follow, a functioning posting content system, a functional following system and an AI chatbot all with functional error messages on each page.</p>
+                    <p>Currently, its still in the process of being graded so I will not be sharing a live link to it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-lower-grid">
+            <div class="image-card" onclick="openModal(this)">
+                <img src="graphics/project3.png" class="projects-image">
+                <div class="title-text">Solitaire website</div>
+                <div class="description">A project where I made a solitaire website using HTML/CSS and JavaScript.</div>
+
+                <div class="modal-content">
+                    <h1>Solitaire website</h1>
+                    <p>Please check out the code on my <a href="https://github.com/MrEdDud/solitare-website" style="color: white;">GitHub repository</a>.</p>
+                    <p>This project was a university assignment where I made a solitaire website using HTML/CSS and JavaScript.</p>
+                    <p>This was the first project in our module and for the final project we were expected to produce a website with a functional login/registration system using local storage and session storage and then to have a game with a leaderboards system.</p>
+                    <p>I decided to create a solitaire game as it was a good way to practice my JavaScript skills. By the end of the project I was able to create the game with a leaderboards system but my solitaire has quite a few bugs and is close to impossible to beat. Also the leaderboards system is lacking at best as it only really displays users that are in session storage and thats about it.</p>
+                    <p>Heres a live link to the website: <a href="https://mreddud.github.io/solitare-website/" style="color: white;">Solitaire Website</a></p>
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal(this)">
+                <img src="graphics/project4.png" class="projects-image">
+                <div class="title-text">Arch Linux Laptop</div>
+                <div class="description">A small project where I installed Arch Linux on my laptop.</div>
+
+                <div class="modal-content" style="padding-bottom: 10vh;">
+                    <h1>My Linux Laptop</h1>
+                    <p>Why did I do this? Basically, no reason. I saw a video showcasing Arch Linux, and I thought to myself, I want that, so here we are.</p>
+                    <p>Did I know anything about Linux before this? Practically no.</p>
+                    <p>What did I learn by doing this? Crucial Linux skills and patience.</p>
+                    <h1>28th April 2025</h1>
+                    <p>I started by going to the Arch Linux installation guide (https://wiki.archlinux.org/title/Installation_guide) where I started to read the installation process. I got the download file and used balenaEtcher to put it into a spare SSD I had. Now you may be thinking, why did I put it on an SSD? It's because I couldn't find a USB stick in my house.</p>
+                    <p>I inserted the SSD into the laptop, and after tinkering with the boot options, I was greeted with the CLI of Arch Linux. Now, because I was hasty, I didn't read the next step, where it says to check the signature to check if it's malware, so I checked the signature by looking at the SHA256 code on the website and my own, and they were identical. I checked the SHA256 of my installed file by doing "certutil -hashfile /path/to/file SHA256" on my Windows PC, and it worked.</p>
+                    <p>Next, I connected to the wifi using iwd (my laptop does not have a LAN cable port), changed the font using "setfont ter-132b" and then, after doing some other random useless commands, I started partitioning by doing "fdisk -l" to see the disk name. Then, after getting confused by the table the website shows you and getting confused by the Windows partitions that were previously on my laptop, and after asking ChatGPT for even more help, I was able to make the 3 partitions that are needed, the boot, swap and root partitions. At this part of the process, the command "lsblk" became very useful to me so that I can check that I'm doing everything correctly.</p>
+                    <p>After this, I formatted each partition, which was very easy by just using the commands listed on the website. Then I mounted the partitions and turned on swap for the swap partition, which came with some difficulty after ChatGPT tried to tell me to do stuff which I couldn't do yet. After mounting, I installed the bare minimum stuff that the website told me to install with this command "pacstrap -K /mnt base linux linux-firmware" and continued through the guide. Then I made my fstab file like this "genfstab -U /mnt >> /mnt/etc/fstab" and then did "arch-chroot /mnt".</p>
+                    <p>Once I finally reached the chroot part, I thought I was close to finishing. So I continued through the guide and reached step 3.5, where I found out about nano, and I installed it using "pacman -S nano". Before this, I was trying to use nano and vim without having them installed, which obviously caused errors. Then I got to the system boot part, where I had to pick a boot loader. I chose systemd-boot because it looked easier, but I later changed to GRUB. This, however, is where tragedy strikes, as when I was trying to edit a file called arch.conf, instead of doing "nano /path/to/arch.conf" I did "nano > /path/to/arch.conf" which caused the terminal to stop working. I tried pressing Ctrl + c, and I tried to go to a different workspace where it asked for a username and password, which at that time, I had no idea what they were. This left me, at that time, with no choice but to restart.</p>
+                    <h1>29th April 2025</h1>
+                    <p>It wasn't so bad, though, because I only had to mount the partitions again, something which I didn't realise after a few restarts. I got back to the point where I had to write something in arch.conf, and I did it. Now I wanted to test the boot loader, which caused me to restart again because I once again didn't know my username and password. Around this point I slowly started to catch on that it wasn't a full reset. Now, to get past this issue, I tried to make a user by doing "sudo useradd -m -G wheel -s /bin/bash eduard". Now this didn't work because I did not do " passwd eduard" after I created the user. But I did do "passwd" before creating the user. Then it was at this point, after testing in a different workspace, that if I put root as my user and then the password, it let me in.</p>
+                    <p>Now I was done... with the installation. I wanted cool stuff like a GUI and whatnot, so from another video I saw some things I should install for my GUI. This included the following: i3, kitty, dunst, feh, lxappearance, flameshot, rose-pine-gtk, picom, n^3 and redshift. At this point in time, I had absolutely no clue what a window manager or display manager was, so I was just following ChatGPT closely. So I installed all of them separately by doing "pacman -S i3". Later, I found out you can do "pacman -S i3 feh picom.....". Now, one issue was that I was installing all of this stuff still as the root user, which at that time, once again, I did not know could possibly be harmful.</p>
+                    <p>Here, I also had another issue, which heavily confused me. I would run commands like sudo and pacstrap, and it wouldn't recognise the commands. The reason this was happening is because I was not connected to the wifi which would usually not be an issue because I would count on my SSD to keep things like iwd installed. However I had unplugged my SSD thinking I was ready to go and after a reboot everything stopped working. This brings us to once again another reset.</p>
+                    <p>I was getting pretty good at this point at the installation part, and I understood that I didn't actually lose much after a reset. So after completing this I installed ly because it's very simplistic and I like how it looks. After possibly 2 resets, I don't remember, I get frustrated with the wifi issues and find the very simple temporary solution of installing iwd. This means I can connect to the internet even if my SSD is unplugged and I have no connection.</p>
+                    <p>Then I quickly installed yay. After this I try to set up i3 with all the other stuff I installed but when I tried to log into i3 it gave me an error so I gave up for the day.</p>
+                    <h1>30th April 2025</h1>
+                    <p>Now, before starting doing stuff on my laptop, I was scrolling on YouTube and I found an incredible tutorial on how to install Arch Linux (https://www.youtube.com/watch?v=68z11VAYMS8&list=LL&index=2). That's when I decided to wipe all of my work and start again to make sure that I install everything properly. Now keep in mind, before this point, all I was doing to install all the stuff I did was a mix of the Arch Linux wiki's and installation guides and ChatGPT, so when I followed this tutorial, it was like a breath of fresh air. I followed this tutorial exactly and it all went smoothly except for some points where I had to restart because I put too little memory in the boot partition and it took me some time to configure GRUB correctly. Now my issue with GRUB is that I tried to run this command "grub-install /dev/mydisk" but it gave me an error so ChatGPT told me to run this command "grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB" and it worked.</p>
+                    <h1>9th May 2025 and onwards</h1>
+                    <p>From now on it will be more brief as I'm writing this much further in the future and have limited notes.</p>
+                    <p>After completing the tutorial, it was time to install some more stuff. I started with pipewire so that I could have functioning audio and got many other apps, including dunst. Now I was still suffering from my issue with the wifi not connecting so I sued nmtui to partially fix it. Later I found out that my issue is that my ipv4 is not automatically configuring which I fixed my later by just putting a line of code (sudo dhclient wlo1) in my startup script.</p>
+                    <p>At around this point, I had decided I wanted to use hyprland because it looked cool, and began the process of installing hyprland. At the time, I didn't really understand which apps were compatible with hyprland and which ones were compatible with i3. I had to install many apps and uninstall many more, but eventually I managed to set up hyprland with waybar, a background picture with some very mediocre pricing.</p>
+                    <p>When it was all done and working, using Arch Linux with Hyprland is incredibly satisfying and quite a rewarding process to reach. I heavily enjoyed the customisation of everything and the fact that you have 0 bloatware and ads and whatnot. The only real issue that I faced and never fixed was the fact that I couldn't screen share on Discord but I never used discord on my laptop. Now, the reason I was speaking in past tense is because sadly I had to get rid of Arch for university, as maintaining Arch and also doing university work was just not worth the effort. Instead, I installed Windows 11 and made sure to install it with the least amount of bloat possible.</p>
+                    <hr><p>Will I install Arch Linux again in the future? Probably, but I'll also probably not and find another cool distro to use</p>
+                    <p>Was installing Arch worth it? At least for me, definitely, because even with all the issues standing in my way, it was very enjoyable and incredibly informative on how Linux works, and it was super satisfying and efficient to use Hyprland.</p>
+                    <p>Here's the only picture I can find, which just shows you my partitions before I fully wiped Windows off my laptop </p>
+                    <img src="graphics/partitions.jpg" class="modal-image">
+                </div>
+            </div>
+            <div class="image-card" onclick="openModal(this)">
+                <img src="graphics/project5.png" class="projects-image">
+                <div class="title-text">Cruise ship manager</div>
+                <div class="description">A Java project where I made a terminal-based cruise ship manager.</div>
+
+                <div class="modal-content">
+                    <h1>Cruise Ship Manager</h1>
+                    <!-- <p>Please check out the code on my <a href="https://github.com/MrEdDud/solitare-website" style="color: white;">GitHub repository</a>.</p> -->
+                    <p>This project was a university assignment where I made a terminal-based cruise ship manager using Java.</p>
+                    <p>For this project I was able to create a cruise ship manager where you can add passengers, remove passengers, view passenger lists and also view the total revenue of the ship. The program uses Object-oriented programming principles such as classes and inheritance to create different types of cabins.</p>
+                    <p>Currently, its still in the process of being graded so I will not be sharing a Github link to it.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section class="work-container" id="work">
+        <div class="work-title">
+            <h1>And now finally... My Work Experience!</h1>
+            <p>Here is some of my <strong> relevant work experience</strong> including other things like <strong>volunteering</strong> and <strong>competitions</strong>.</p>
+            <div class="work-section"><hr>
+                <h1>Computer Science Tutor <div class="dates">Nov 2023 - Sep 2024</div></h1>
+                <p>As a Computer Science Tutor, I helped my students understand key programming concepts and problem-solving techniques. The programming language I taught them was Python, and alongside Pygame, we were able to create a simple maze game.</p>
+                <p>During my time as a tutor, I was able to further develop my own skills in Python and my problem-solving abilities.</p>
+            </div><hr>
+            <div class="work-section">
+                <h1>New Scientists Live Volunteer <div class="dates">Oct 2025</div></h1>
+                <p>At the New Scientists Live event, I volunteered to help my university with displaying our Niryo robot arms. During the event I talked to many people and demonstrated how the arm worked, debugged it and also answered many questions that people had.</p>
+                <p>At the event, I was able to improve my communication skills and also my teamwork skills.</p>
+            </div><hr>
+            <div class="work-section">
+                <h1>World Skills Competition <div class="dates">Apr 2023</div></h1>
+                <p>For the World Skills Competition, we were challenged to complete problems which included system management tasks like disk partitioning and we also had cybersecurity tasks where we had to configure the firewall. This was all done inside a virtual machine.</p>
+                <p>This competition helped me gain experience in areas I'm weaker in like system administration and cybersecurity.</p>
+            </div><hr>
+            <div class="work-section">
+                <h1>Digital Skills, AWS Project <div class="dates">Nov 2022 - Mar 2023</div></h1>
+                <p>For the AWS project, we were tasked to create a solution one of 4 problems. For our team, we chose to create a game which would help address climate change in a fun way. We were able to create a prototype which we presented at the Amazon headquarters.</p>
+                <p>This project taught me a lot about time management, teamwork and communication alongside technical skills like programming and problem solving.</p>
+            </div><hr>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <section>
+        <div id="modal-backdrop" class="modal-backdrop">
+            <div class="modal" id="modal">
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+        </div>
+    </section>
+    
+    <!--FOOTER-->
+    <footer>
+        <ul>
+            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=eduardcojocaru2016@gmail.com">Email</a></li>
+            <li><a href="EDUARD_COJOCARU_CV.pdf">CV</a></li>
+            <li><a href="https://www.linkedin.com/in/eduard-cojocaru-075623256">LinkedIn</a></li>
+            <li><a href="https://github.com/MrEdDud">GitHub</a></li>
+        </ul>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
