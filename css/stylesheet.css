@@ -119,6 +119,8 @@ section {
 .about-image {
     display: none;
     position: absolute;
+    width: 20vw;
+    height: auto;
     right: 15vw;
     top: 30vh;
 }
@@ -326,6 +328,7 @@ section {
 }
 
 .modal-content {
+    padding-top: 10vh;
     display: none;
 }
 
