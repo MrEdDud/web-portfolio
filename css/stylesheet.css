@@ -269,4 +269,8 @@ a:hover {color: rgba(255, 255, 255, 70%);}
     .right {
         padding: 0vh 5vw 2vh 5vw;
     }
+
+    main {
+        padding: 5vw;
+    }
 }
