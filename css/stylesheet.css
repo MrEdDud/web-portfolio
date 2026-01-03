@@ -232,3 +232,41 @@ a:hover {color: rgba(255, 255, 255, 70%);}
     from {opacity: .4} 
     to {opacity: 1}
 }
+
+@media (max-width: 600px) {
+    .name {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5vw;
+        position: sticky;
+        top: 5.2vh;
+        z-index: 10;
+        height: auto;
+        padding: 5vw;
+        border-bottom: #403D39 solid 0.1vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .left .title, .left .text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .right {
+        padding: 0vh 5vw 2vh 5vw;
+    }
+}
