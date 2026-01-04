@@ -236,7 +236,7 @@ a:hover {color: rgba(255, 255, 255, 70%);}
     to {opacity: 1}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1004px) {
     .name {
         display: none;
     }

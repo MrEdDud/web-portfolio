@@ -53,6 +53,37 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') changeSlide(1);
 });
 
+let startX = 0;
+let startY = 0;
+let endX = 0;
+let endY = 0;
+
+const threshold = 50;
+
+document.addEventListener('touchstart', (e) => {
+    startX = e.changedTouches[0].screenX;
+    startY = e.changedTouches[0].screenY;
+}, { passive: true });
+
+document.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].screenX;
+    endY = e.changedTouches[0].screenY;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const diffX = endX - startX;
+    const diffY = endY - startY;
+
+    if (Math.abs(diffX) < threshold || Math.abs(diffX) < Math.abs(diffY)) return;
+
+    if (diffX > 0) {
+        changeSlide(-1);
+    } else {
+        changeSlide(1);
+    }
+}
+
 function initSlideshow(images) {
     const slideshow = document.getElementById("slideshow");
     const dots = document.getElementById("dots");
