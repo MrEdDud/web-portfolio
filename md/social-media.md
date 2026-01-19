@@ -1,5 +1,11 @@
-# Social media website - Relax
-<br>
+<div class="job">
+    <span class="left-job">
+        <div class="title">Social media website - Relax</div>
+    </span>
+    <span class="right-job">
+        <a href="https://github.com/MrEdDud/relax-social-media-website" target="_blank">Github repository</a><br>
+    </span>
+</div>
 
 This project was a university assignment where I made a social media website using <span class="blue">Node.js</span> with <span class="blue">Express</span> and <span class="blue">MongoDB</span>.
 
