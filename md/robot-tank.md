@@ -47,5 +47,7 @@ Now here we are at the modern day. My next steps are to fully connect the microp
 - HTML/CSS
 - JavaScript
 - Flask
+- OpenAI API
+- Shell
 
 Have a look at my robot tank.

@@ -32,7 +32,9 @@ const slideshowData = {
     "old-server": [
         "images/old-server/img1.webp",
         "images/old-server/img2.webp",
-        "images/old-server/img3.webp"
+        "images/old-server/img3.webp",
+        "images/old-server/img4.webp",
+        "images/old-server/img5.webp"
     ],
     "tutor": [
         "images/tutor/img1.webp",
